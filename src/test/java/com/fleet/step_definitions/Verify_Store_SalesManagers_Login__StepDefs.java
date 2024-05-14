@@ -15,12 +15,11 @@ public class Verify_Store_SalesManagers_Login__StepDefs {
 
     @Then("User sees eightmoduleNames")
     public void user_sees_eightmodule_names(List<String> expectedTitle) {
-        /* System.out.println("expectedTitle = " + expectedTitle);
-        */
+
         BrowserUtils.sleep(1);
         List<String> actualTitle = BrowserUtils.getElementsText(us001.menuOptions);
-        /*System.out.println("actualTitle = " + actualTitle);
-         */
+
+        BrowserUtils.sleep(1);
         Assert.assertEquals(expectedTitle, actualTitle);
 
     }
