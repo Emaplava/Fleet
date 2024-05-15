@@ -24,13 +24,10 @@ public class Verify_Driver_Login_StepDefs {
 
     @Then("User sees moduleNames")
     public void user_sees_module_names(List<String> expectedTitle) {
-        /*System.out.println("expectedTitle = " + expectedTitle);
-        */
+
         BrowserUtils.sleep(1);
 
         List <String> actualTitle = BrowserUtils.getElementsText(us001.menuOptions);
-        /*System.out.println("actualTitle = " + actualTitle);
-        */
         Assert.assertEquals(expectedTitle,actualTitle);
 
     }
