@@ -1,15 +1,10 @@
 package com.fleet.step_definitions;
-
-import com.fleet.pages.LoginPage;
 import com.fleet.pages.Us001;
 import com.fleet.utilities.BrowserUtils;
-import com.fleet.utilities.ConfigurationReader;
 import com.fleet.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.junit.Assert;
-
 import java.util.List;
 
 public class Verify_Driver_Login_StepDefs {

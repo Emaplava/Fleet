@@ -1,13 +1,11 @@
 package com.fleet.step_definitions;
-import com.fleet.pages.LoginPage;
 import com.fleet.pages.Us001;
 import com.fleet.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.junit.Assert;
 import java.util.List;
 
-public class Verify_Store_SalesManagers_Login__StepDefs {
+public class Verify_Store_SalesManagers_Login_StepDefs {
 
 
     Us001 us001 = new Us001();
