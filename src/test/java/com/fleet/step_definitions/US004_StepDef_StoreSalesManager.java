@@ -4,11 +4,11 @@ import com.fleet.pages.LoginPage;
 import com.fleet.pages.US004_Page;
 import com.fleet.utilities.BrowserUtils;
 import com.fleet.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
 
-public class US004_StepDef {
+public class US004_StepDef_StoreSalesManager {
     US004_Page us004Page = new US004_Page();
     LoginPage loginPage = new LoginPage();
     @When("the user goes to the log in page")
@@ -16,13 +16,7 @@ public class US004_StepDef {
     {
         Driver.getDriver().get("https://qa.xfleetsolutions.com/user/login");
     }
-    @Then("the user logged in as Sales Manager")
-    public void theUserLoggedInAsSalesManager() {
-        loginPage.userName.sendKeys("SalesManager101");
-        loginPage.password.sendKeys("UserUser123");
-        loginPage.submit.click();
 
-    }
 
 
     @When("the user navigates to {string} to {string}")
@@ -47,10 +41,11 @@ public class US004_StepDef {
         BrowserUtils.verifyTitleContains("All - Vehicle Contract - Entities - System - Car - Entities - System");
     }
 
-    @Then("the user should be able to see message as {string}")
-    public void theUserShouldBeAbleToSeeMessageAs(String arg0) {
+
     }
 
 
 
-}
+
+
+
