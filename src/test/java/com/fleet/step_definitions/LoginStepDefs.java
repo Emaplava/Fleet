@@ -2,6 +2,7 @@ package com.fleet.step_definitions;
 
 import com.fleet.pages.LoginPage;
 import com.fleet.utilities.ConfigurationReader;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 public class LoginStepDefs {
 
@@ -36,8 +37,6 @@ public class LoginStepDefs {
       LoginPage loginPage=new LoginPage();
       loginPage.login(username,password);
     }
-
-
 
 
 
