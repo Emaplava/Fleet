@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class US002 {
+public class OroincDocumentationPage {
 
-    public US002(){
+    public OroincDocumentationPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

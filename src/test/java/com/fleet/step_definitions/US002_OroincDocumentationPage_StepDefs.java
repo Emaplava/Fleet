@@ -1,15 +1,15 @@
 package com.fleet.step_definitions;
 
-import com.fleet.pages.US002;
+import com.fleet.pages.OroincDocumentationPage;
 import com.fleet.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 
-public class OroincDocumentationPage {
-    US002 us002 = new US002();
+public class US002_OroincDocumentationPage_StepDefs {
+    OroincDocumentationPage oroincDocumentationPage = new OroincDocumentationPage();
 
     @Then("user clicks on the question mark icon.")
     public void user_clicks_on_the_question_mark_icon() {
-        us002.questionMarkIcon.click();
+        oroincDocumentationPage.questionMarkIcon.click();
 
     }
     @Then("user switch to the new window")
