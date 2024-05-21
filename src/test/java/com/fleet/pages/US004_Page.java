@@ -9,11 +9,11 @@ public class US004_Page extends BasePage {
     public US004_Page(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[2]/a/span")
+    @FindBy(xpath = "(//span[contains(text(), '  Fleet')])[1]")
 
     public WebElement Fleet;
 
-    @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[2]/div/div/ul/li[6]/a")
+    @FindBy(xpath = "(//span[contains(text(), 'Vehicle')])[4]")
 
     public WebElement VehicleContracts;
     @FindBy(xpath ="//title[.='All - Vehicle Contract - Entities - System - Car - Entities - System']")

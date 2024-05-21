@@ -12,7 +12,7 @@ public class US_004_Driver {
     @And("the driver user navigates to {string} to {string}")
     public void theDriverUserNavigatesToTo(String arg0, String arg1) throws InterruptedException {
     BrowserUtils.sleep(3);
-        BrowserUtils.hover(us004Page.FleetDriver);
+    BrowserUtils.hover(us004Page.FleetDriver);
    BrowserUtils.sleep(3);
     us004Page.driverVehicleContract.click();
     }
