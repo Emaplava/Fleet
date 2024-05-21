@@ -2,6 +2,7 @@ package com.fleet.step_definitions;
 
 import com.fleet.pages.LoginPage;
 import com.fleet.utilities.ConfigurationReader;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 public class LoginStepDefs {
 
@@ -14,8 +15,8 @@ public class LoginStepDefs {
     @Given("the user logged in as {string}")
     public void the_user_logged_in_as(String userType) {
         //based on input enter that user information
-        String username =null;
-        String password =null;
+        String username = null;
+        String password = null;
 
         if(userType.equalsIgnoreCase("driver")){
             username = ConfigurationReader.getProperty("driver_username");
@@ -35,9 +36,9 @@ public class LoginStepDefs {
     public void the_user_logged_in_with_username_as_and_password_as(String username, String password) {
       LoginPage loginPage=new LoginPage();
       loginPage.login(username,password);
+
+
     }
-
-
 
 
 
