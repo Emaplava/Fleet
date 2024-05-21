@@ -1,13 +1,16 @@
 package com.fleet.step_definitions;
+
 import com.fleet.pages.Us001;
 import com.fleet.utilities.BrowserUtils;
 import com.fleet.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+
 import java.util.List;
 
-public class Verify_Driver_Login_StepDefs {
+public class US001_UsersLogIn_StepDefs {
+
 
     Us001 us001 = new Us001();
 
@@ -27,4 +30,15 @@ public class Verify_Driver_Login_StepDefs {
 
     }
 
+
+    @Then("User sees eightmoduleNames")
+    public void user_sees_eightmodule_names(List<String> expectedTitle) {
+
+        BrowserUtils.sleep(1);
+        List<String> actualTitle = BrowserUtils.getElementsText(us001.menuOptions);
+
+        BrowserUtils.sleep(1);
+        Assert.assertEquals(expectedTitle, actualTitle);
+
+    }
 }
