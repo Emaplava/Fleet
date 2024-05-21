@@ -8,6 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
+  //  public static WebElement Fleet;
+  //  public static WebElement Vehicles;
+
     public LoginPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
@@ -22,6 +25,8 @@ public class LoginPage {
 
     @FindBy(name = "_submit")
     public WebElement submit;
+
+
 
 
     public void login(String userNameStr, String passwordStr) {
