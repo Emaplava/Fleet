@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class US008 {
+public class RepetitiveCalendarEvents {
 
-    public US008() {
+    public RepetitiveCalendarEvents() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
